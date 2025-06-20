@@ -17,13 +17,13 @@ function initDatabase() {
     if (storedProducts) {
         mockDatabase.products = storedProducts;
     } else {
-        // Initialize with sample products
+        // Initialize with sample products (Indian prices in INR)
         mockDatabase.products = [
             {
                 id: '1',
                 name: 'Fresh Organic Apples',
-                description: 'Crisp and sweet organic apples, perfect for snacking or baking.',
-                price: 4.99,
+                description: 'Crisp and sweet organic apples from Himachal Pradesh, perfect for snacking or baking.',
+                price: 299.99,
                 category: 'Fresh Produce',
                 image_url: 'https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=800',
                 stock_quantity: 50,
@@ -32,9 +32,9 @@ function initDatabase() {
             },
             {
                 id: '2',
-                name: 'Whole Milk',
-                description: 'Fresh whole milk from local farms, rich in calcium and vitamins.',
-                price: 3.49,
+                name: 'Amul Fresh Milk',
+                description: 'Fresh whole milk from Amul dairy, rich in calcium and vitamins. 1 Liter pack.',
+                price: 65.00,
                 category: 'Dairy',
                 image_url: 'https://images.pexels.com/photos/236010/pexels-photo-236010.jpeg?auto=compress&cs=tinysrgb&w=800',
                 stock_quantity: 30,
@@ -43,9 +43,9 @@ function initDatabase() {
             },
             {
                 id: '3',
-                name: 'Artisan Bread',
-                description: 'Freshly baked artisan bread with a crispy crust and soft interior.',
-                price: 5.99,
+                name: 'Artisan Whole Wheat Bread',
+                description: 'Freshly baked artisan whole wheat bread with a crispy crust and soft interior.',
+                price: 45.00,
                 category: 'Bakery',
                 image_url: 'https://images.pexels.com/photos/209206/pexels-photo-209206.jpeg?auto=compress&cs=tinysrgb&w=800',
                 stock_quantity: 20,
@@ -54,9 +54,9 @@ function initDatabase() {
             },
             {
                 id: '4',
-                name: 'Orange Juice',
-                description: '100% pure orange juice, no added sugar or preservatives.',
-                price: 4.29,
+                name: 'Real Orange Juice',
+                description: '100% pure orange juice from Real, no added sugar or preservatives. 1 Liter pack.',
+                price: 120.00,
                 category: 'Beverages',
                 image_url: 'https://images.pexels.com/photos/96974/pexels-photo-96974.jpeg?auto=compress&cs=tinysrgb&w=800',
                 stock_quantity: 25,
@@ -65,9 +65,9 @@ function initDatabase() {
             },
             {
                 id: '5',
-                name: 'Pasta',
-                description: 'Premium durum wheat pasta, perfect for any Italian dish.',
-                price: 2.99,
+                name: 'Durum Wheat Pasta',
+                description: 'Premium durum wheat pasta from Italy, perfect for any Italian dish. 500g pack.',
+                price: 180.00,
                 category: 'Pantry',
                 image_url: 'https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=800',
                 stock_quantity: 40,
@@ -76,12 +76,34 @@ function initDatabase() {
             },
             {
                 id: '6',
-                name: 'Fresh Salmon',
-                description: 'Wild-caught Atlantic salmon, rich in omega-3 fatty acids.',
-                price: 12.99,
+                name: 'Fresh Pomfret Fish',
+                description: 'Fresh pomfret fish from Mumbai coast, rich in omega-3 fatty acids. 1kg.',
+                price: 850.00,
                 category: 'Meat & Seafood',
                 image_url: 'https://images.pexels.com/photos/725991/pexels-photo-725991.jpeg?auto=compress&cs=tinysrgb&w=800',
                 stock_quantity: 15,
+                created_at: new Date().toISOString(),
+                updated_at: new Date().toISOString()
+            },
+            {
+                id: '7',
+                name: 'Basmati Rice',
+                description: 'Premium aged basmati rice from Punjab. Long grain, aromatic. 5kg pack.',
+                price: 450.00,
+                category: 'Pantry',
+                image_url: 'https://images.pexels.com/photos/723198/pexels-photo-723198.jpeg?auto=compress&cs=tinysrgb&w=800',
+                stock_quantity: 35,
+                created_at: new Date().toISOString(),
+                updated_at: new Date().toISOString()
+            },
+            {
+                id: '8',
+                name: 'Alphonso Mangoes',
+                description: 'Premium Alphonso mangoes from Ratnagiri, Maharashtra. Sweet and juicy. 1 dozen.',
+                price: 680.00,
+                category: 'Fresh Produce',
+                image_url: 'https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=800',
+                stock_quantity: 25,
                 created_at: new Date().toISOString(),
                 updated_at: new Date().toISOString()
             }

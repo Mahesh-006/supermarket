@@ -23,10 +23,10 @@ const APP_CONFIG = {
     name: 'SuperMart',
     version: '1.0.0',
     apiUrl: 'https://api.supermart.com',
-    deliveryFee: 5.99,
-    taxRate: 0.08,
-    currency: 'USD',
-    currencySymbol: '$'
+    deliveryFee: 49.99, // ₹49.99 delivery fee
+    taxRate: 0.18, // 18% GST in India
+    currency: 'INR',
+    currencySymbol: '₹'
 };
 
 // Local Storage Keys
